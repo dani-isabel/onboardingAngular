@@ -1,4 +1,5 @@
 <div class="login">
-    <input class="input" type="text" placeholder={{placeholder}}>
-    <input class="btnSave" type="submit" value={{send}}>
+    <input #userInput class="input" type="text" placeholder={{placeholder}} value = {{userInput.value}} >
+    <button class="btnSave" (click) = "addUserName(userInput.value)">{{send}}</button>
 </div>
+<p>{{userName}}</p>
