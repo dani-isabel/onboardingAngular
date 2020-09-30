@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,20 +7,21 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  @Input() placeholder:string;
-  @Input() send:string;
-  @Input() userName:string = '';
+  @Input() placeholder: string;
+  @Input() send: string;
+  @Input() userName: string;
 
-  addUserName(value:string) {
-    if(value.length >= 3) {
+  constructor(  private router: Router) {}
+
+  addUserName(value: string): void {
+    if (value.length >= 3) {
       this.userName = value;
-      alert(value);
       console.log(this.userName);
-    } 
-    else {alert('You need enter a valid name');}
+      this.router.navigate(['/introduction', this.userName]);
+    } else {
+      alert('You need enter a valid name');
+    }
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }
