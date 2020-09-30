@@ -1,0 +1,15 @@
+@import '../../../styles/utilities.scss';
+h1 {
+    font-family: $mainFont;
+    font-size: $bigSize;
+    color: $firstColor;
+}
+.welcome {
+    width: 55%;
+}
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
