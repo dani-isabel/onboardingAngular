@@ -2,16 +2,16 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class HeaderComponent implements OnInit {
   @Input() placeholder: string;
   @Input() send: string;
   @Input() userName: string;
 
-  constructor(  private router: Router) {}
+  constructor( private router: Router ) { }
 
   addUserName(value: string): void {
     if (value.length >= 3) {
@@ -21,6 +21,10 @@ export class LoginComponent implements OnInit {
     } else {
       alert('You need enter a valid name');
     }
+  }
+
+  goTo(){
+    this.router.navigate(['/']);
   }
 
   ngOnInit(): void {
