@@ -1,6 +1,16 @@
     <div class="career">
-        <app-page-title [sectionTitle] = "'Career Path'"></app-page-title>
-        <img class="career__img" src="../../../../assets/character.png" alt="character">
-        <app-next-step></app-next-step>
+            <app-page-title class="career__title" [sectionTitle] = "'Career Path'"></app-page-title>     
+        <section class="roles">
+            <article>
+                <img class="career__img" src="../../../../assets/character.png" alt="character">
+            </article>
+            <article class="role__panels">
+                <app-role-panel [seniority] = "'Senior MGMT'" [rol] = "'CTO'"></app-role-panel>
+                <app-role-panel [seniority] = "'Expert & MGMT'" [rol] = "'CTO'"></app-role-panel>
+                <app-role-panel [seniority] = "'Senior'" [rol] = "'CTO'"></app-role-panel>
+                <app-role-panel [seniority] = "'Initial and Mid level'" [rol] = "'CTO'"></app-role-panel>
+                <app-next-step [class] = "'next__btn next'"></app-next-step>
+            </article>
+        </section>
     </div>
     

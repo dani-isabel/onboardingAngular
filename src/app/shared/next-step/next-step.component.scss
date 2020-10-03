@@ -1,6 +1,6 @@
 @import '../../styles/utilities.scss';
 .next__btn {
-    width: 4.7%;
+    width: 60px;
     height: 60px;
     background: linear-gradient(225deg, $secondColor 0%, $thirdColor 50%, $thirdColor 70%);
     border-radius: 30px;
@@ -14,3 +14,6 @@
         color: white;
     }
 }
+.next {
+    margin-top: 9.4vh;
+  }

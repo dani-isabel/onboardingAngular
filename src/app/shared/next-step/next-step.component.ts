@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-next-step',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./next-step.component.scss']
 })
 export class NextStepComponent implements OnInit {
+  @Input() class:string = '';
 
   constructor() { }
 

@@ -1,0 +1,31 @@
+@import '../../../styles/utilities.scss';
+
+.mat-expansion-panel-header {
+    margin-bottom: 6vh;
+    height: 10vh;
+    max-width: 66%;
+    background-color: $firstColor;
+    border-radius: 20px;
+    box-shadow: -2px 2px 6px $secondColor;
+    border: 1px solid $secondColor;
+    color:white;
+    &:hover {
+        background-color: $thirdColor !important;
+    }
+}
+.mat-expansion-panel-header-title {
+    color:white;
+    font-family: $secondFont;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.mat-expansion-panel {
+    max-width: 66%;
+}
+::ng-deep {
+    .mat-expansion-indicator::after {
+        padding: 8px !important;
+        color: $secondColor;
+        border-width: 0 4px 4px 0 !important;
+    }
+}
