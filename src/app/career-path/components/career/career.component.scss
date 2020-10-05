@@ -1,0 +1,27 @@
+@import '../../../styles/utilities.scss';
+.career {
+  position: relative;
+  height: 100vh;
+    .career__img {
+        margin-top: 36vh;
+        margin-left: 21.4%;
+        height: 62vh;
+      }
+    .roles {
+      display: flex;
+      flex-direction: row;
+    }
+    article {
+      width: 50%;
+    }
+    .role__panels {
+      position: relative;
+      margin-top: 15.5vh;
+    }
+    .role__div {
+      height: 57vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+}   
