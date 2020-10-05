@@ -7,7 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class RolePanelComponent implements OnInit {
   @Input() seniority:string = '';
-  @Input() rol:string = '';
+  @Input() roles:string[] = [];
+  @Input() roles2:string[] = [];
+  @Input() levels:string[] = [];
   @Input() class:string = '';
 
   constructor() { }
