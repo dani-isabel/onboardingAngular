@@ -3,13 +3,16 @@
 .mat-expansion-panel-header {
     margin-bottom: 6vh;
     height: 10vh;
-    max-width: 66%;
+    max-width: 100%;
     background-color: $firstColor;
     border-radius: 20px;
     box-shadow: -2px 2px 6px $secondColor;
     border: 1px solid $secondColor;
     color:white;
     &:hover {
+        background-color: $thirdColor !important;
+    }
+    &:focus {
         background-color: $thirdColor !important;
     }
 }
