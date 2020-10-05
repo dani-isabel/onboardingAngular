@@ -5,11 +5,13 @@
                 <img class="career__img" src="../../../../assets/character.png" alt="character">
             </article>
             <article class="role__panels">
-                <app-role-panel [seniority] = "'Senior MGMT'" [rol] = "'CTO'"></app-role-panel>
-                <app-role-panel [seniority] = "'Expert & MGMT'" [rol] = "'CTO'"></app-role-panel>
-                <app-role-panel [seniority] = "'Senior'" [rol] = "'CTO'"></app-role-panel>
-                <app-role-panel [seniority] = "'Initial and Mid level'" [rol] = "'CTO'"></app-role-panel>
-                <app-next-step [class] = "'next__btn next'"></app-next-step>
+                <div class="role__div">
+                    <app-role-panel [seniority] = "'Senior MGMT'" [roles] = "['CTO','STUDIO PARTNER','VP TECH']"></app-role-panel>
+                    <app-role-panel [class]="'level__div'" [seniority] = "'Expert & MGMT'" [levels] = "['L6','L5','L4']" [roles] = "['SUBJECT MATTER EXPERT','SUBJECT MATTER EXPERT','SUBJECT MATTER EXPERT']" [roles2] = "['TECHNICAL DIRECTOR','TECHNICAL DIRECTOR','TECHNICAL DIRECTOR']"></app-role-panel>
+                    <app-role-panel [class]="'level__div'" [seniority] = "'Senior'" [levels] = "['L3','L2','L1']" [roles] = "['ARCHITECT','SOFTWARE DESIGNER','SENIOR']"></app-role-panel>
+                    <app-role-panel [seniority] = "'Initial and Mid level'" [roles] = "['SEMI SENIOR ADV','SEMI SENIOR','JUNIOR ADV','JUNIOR']"></app-role-panel>
+                </div>
+                    <app-next-step [class] = "'next__btn next'"></app-next-step>
             </article>
         </section>
     </div>
