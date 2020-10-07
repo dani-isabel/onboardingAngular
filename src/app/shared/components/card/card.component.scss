@@ -1,0 +1,37 @@
+@import "../../../styles/utilities.scss";
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__title {
+  color: $firstColor;
+  text-align: center;
+}
+.card__img {
+  max-width: 155px;
+  border: 5px solid #4c437e;
+  border-radius: 84px;
+  margin: 3vh 0 3.9vh 0;
+}
+.card__name {
+  color: $textColor;
+  font-family: $secondFont;
+  font-weight: bold;
+  text-align: center;
+}
+.card__link {
+  background-color: transparent;
+  border: none;
+  color: $textColor;
+  font-family: $secondFont;
+  text-decoration: underline;
+  &:hover {
+    color: $thirdColor;
+  }
+  &:focus {
+    outline: none;
+    color: $thirdColor;
+  }
+}
+

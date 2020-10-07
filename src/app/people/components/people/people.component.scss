@@ -1,0 +1,24 @@
+@import '../../../styles/utilities.scss';
+
+.people__title {
+  text-align: left;
+  letter-spacing: 0px;
+  color: $firstColor;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 17vh 0 0 16%;
+  position: absolute;
+}
+.people__section {
+  padding-top: 28vh;
+  .people__cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 11%;
+    background: $inputColor 0% 0% no-repeat padding-box;
+    app-card {
+      max-width: 16%;
+      margin: 5vh 0vh;
+    }
+  }
+}
