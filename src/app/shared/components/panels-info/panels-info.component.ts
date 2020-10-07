@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-role-panel',
-  templateUrl: './role-panel.component.html',
-  styleUrls: ['./role-panel.component.scss']
+  selector: 'app-panels-info',
+  templateUrl: './panels-info.component.html',
+  styleUrls: ['./panels-info.component.scss']
 })
-export class RolePanelComponent implements OnInit {
+export class PanelsInfoComponent implements OnInit {
   @Input() seniority:string = '';
   @Input() roles:string[] = [];
   @Input() roles2:string[] = [];

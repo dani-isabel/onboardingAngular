@@ -1,0 +1,18 @@
+<div class="fci3">
+    <app-page-title [class]="'section__title fci3__title'" [sectionTitle]="'Globant Values & FCI3'"></app-page-title>
+    <section class="roles">
+        <article>
+            <a class="fci3__a" target="_blank" href="https://sites.google.com/globant.com/people-site-2/talent-manifesto?authuser=1&pli=1">Talent<br>Manifesto</a>
+            <a target="_blank" href="https://sites.google.com/globant.com/people-site-2/talent-manifesto?authuser=1&pli=1"><img class="career__img" src="../../../../assets/character.png" alt="character"></a>
+        </article>
+        <article class="role__panels">
+            <div class="role__div">
+                <app-panels-info [seniority] = "'Excellent in your work'" [roles] = "['FOCUS', 'COMMITTED']"></app-panels-info>
+                <app-panels-info [seniority] = "'Act Ethically'" [roles] = "['INTEGRITY']"></app-panels-info>
+                <app-panels-info [seniority] = "'Constantly innovate / Think Big'" [roles] = "['FAST LEARNER', 'CLEAR THINKER', 'INNOVATIVE']"></app-panels-info>
+                <app-panels-info [seniority] = "'Team player / Have fun'" [roles] = "['FLEXIBLE', 'COLLABORATIVE', 'INCLUSIVE']"></app-panels-info>
+            </div>
+                <app-next-step [class] = "'next__btn next'" (click)="nextPage()"></app-next-step>
+        </article>
+    </section>
+</div>

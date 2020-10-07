@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RolePanelComponent } from './role-panel.component';
+import { Fci3Component } from './fci3.component';
 
-describe('RolePanelComponent', () => {
-  let component: RolePanelComponent;
-  let fixture: ComponentFixture<RolePanelComponent>;
+describe('Fci3Component', () => {
+  let component: Fci3Component;
+  let fixture: ComponentFixture<Fci3Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RolePanelComponent ]
+      declarations: [ Fci3Component ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RolePanelComponent);
+    fixture = TestBed.createComponent(Fci3Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
