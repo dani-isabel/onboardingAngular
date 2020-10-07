@@ -1,4 +1,4 @@
-@import '../../styles/utilities.scss';
+@import '../../../styles/utilities.scss';
 
 .section__title {
     font-family: $secondFont;
@@ -6,4 +6,5 @@
     max-width: 11.2%;
     margin: 4vh 0 0 16%;
     position: absolute;
+    font-size: 32px;
 }

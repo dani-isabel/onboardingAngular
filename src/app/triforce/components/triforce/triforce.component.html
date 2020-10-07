@@ -1,6 +1,13 @@
-<mat-tab-group>
-    <mat-tab label="First"> Content 1 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Third"> Content 3 </mat-tab>
-  </mat-tab-group>
-  
+<div class="triforce">
+  <app-page-title class="career__title" [sectionTitle]="'The Triforce'"></app-page-title>
+  <p class="triforce__description">The three aspects consist of the Studio, TDC and Accounts</p>
+  <section class="triforce__section">
+    <p class="triforce__name">
+      <span *ngIf="name"><span class="triforce__span">{{name}}</span> is</span>      
+      <span *ngIf="!name"><span class="triforce__span">You</span> are</span> 
+      here
+    </p>
+    <app-tag-triforce></app-tag-triforce>
+    <app-next-step [class]="'next__btn next'" (click)="nextPage()"></app-next-step>
+  </section>
+</div>

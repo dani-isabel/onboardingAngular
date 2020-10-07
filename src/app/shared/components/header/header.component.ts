@@ -16,14 +16,13 @@ export class HeaderComponent implements OnInit {
   addUserName(value: string): void {
     if (value.length >= 3) {
       this.userName = value;
-      console.log(this.userName);
       this.router.navigate(['/intro', this.userName]);
     } else {
       alert('You need enter a valid name');
     }
   }
 
-  goTo(){
+  goTo(): void{
     this.router.navigate(['/']);
   }
 

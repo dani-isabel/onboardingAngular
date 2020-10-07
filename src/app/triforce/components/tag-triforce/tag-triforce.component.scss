@@ -1,0 +1,16 @@
+@import "../../../styles/utilities.scss";
+::ng-deep {
+  .mat-tab-label {
+    min-width: 33.33% !important;
+    font-size: 24px;
+    font-family: $secondFont;
+  }
+  .mat-tab-body-content {
+    text-align: center;
+    margin-top: 8vh;
+  }
+}
+.triforce__img {
+  width: 22%;
+  border-radius: 100%;
+}
