@@ -11,7 +11,7 @@
                     <app-role-panel [class]="'level__div'" [seniority] = "'Senior'" [levels] = "['L3','L2','L1']" [roles] = "['ARCHITECT','SOFTWARE DESIGNER','SENIOR']"></app-role-panel>
                     <app-role-panel [seniority] = "'Initial and Mid level'" [roles] = "['SEMI SENIOR ADV','SEMI SENIOR','JUNIOR ADV','JUNIOR']"></app-role-panel>
                 </div>
-                    <app-next-step [class] = "'next__btn next'"></app-next-step>
+                    <app-next-step [class] = "'next__btn next'" (click)="nextPage()"></app-next-step>
             </article>
         </section>
     </div>

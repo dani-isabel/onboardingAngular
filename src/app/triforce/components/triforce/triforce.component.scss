@@ -1,0 +1,23 @@
+@import "../../../styles/utilities.scss";
+
+.triforce__description{
+    font-size: 24px;
+    color: #4C437E;
+    margin-left: 40%;
+    padding-top: 8vh;
+}
+.triforce__section{
+    background-color: #FFEDF6;
+    height: 80vh;
+    margin-top: 7vh;
+    .triforce__name{
+        font-family: $secondFont;
+        font-size: 40px;
+        color: #DC397A;
+        padding: 21px 0px 23px 0px;
+        text-align: center;
+        .triforce__span{
+            font-weight: 600;
+        }
+    }
+}
