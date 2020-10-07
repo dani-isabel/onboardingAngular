@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +13,8 @@ export class LoginManagerService {
 
   setName(name: string): void {
     this.nameSubject.next(name);
-    this.nameSubject.subscribe( (name1) => {
-      this.name = name1;
+    this.nameSubject.subscribe( (newName) => {
+      this.name = newName;
     });
   }
 

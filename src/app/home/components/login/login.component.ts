@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   @Input() send: string;
   @Input() userName: string;
 
-  constructor(  private router: Router, private loginManagerService: LoginManagerService ) {}
+  constructor( private router: Router, private loginManagerService: LoginManagerService ) {}
 
   addUserName(value: string): void {
     if (value.length >= 3) {
