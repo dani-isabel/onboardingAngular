@@ -1,0 +1,17 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-fci3',
+  templateUrl: './fci3.component.html',
+  styleUrls: ['./fci3.component.scss']
+})
+export class Fci3Component implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+  nextPage(): void {
+    
+  }
+}
