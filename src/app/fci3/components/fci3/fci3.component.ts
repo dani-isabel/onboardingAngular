@@ -8,11 +8,12 @@ import { Router } from '@angular/router';
 })
 export class Fci3Component implements OnInit {
 
-  constructor( private router:Router) { }
+  constructor( private router: Router ) { }
 
   ngOnInit(): void {
   }
+
   nextPage(): void {
-    
+    this.router.navigate(['/people']);
   }
 }
