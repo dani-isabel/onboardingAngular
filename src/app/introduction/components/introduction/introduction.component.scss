@@ -2,11 +2,17 @@
 .infoUser {
     // width: 100%;
     // height: 100vh;
-    height: 800px;
-    background-image: url("../../../../assets/background.jpg");
+    //height: 800px;
+    //background-image: url("../../../../assets/background.jpg");
+    //background-repeat: no-repeat;
+    //background-size: cover;
+    // background-size: 100% 100vh;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../../assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    // background-size: 100% 100vh;
+    background-size: 100% 100vh;
     h3 {
         span {
             font-size: $bigSize;
@@ -19,12 +25,12 @@
         color: white;
         font-size: 2em;
         font-weight: normal;
-        padding-top: 124px;
+        padding-top: 15vh;
     }
     h1 {
         color: $thirdColor;
         text-align: center;
-        margin-top: 140px;
+        margin-top: 18vh;
         font-size: 40px;
     }
 }
