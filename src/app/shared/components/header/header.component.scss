@@ -1,6 +1,9 @@
-.logo {
-    width: 6%;
-    margin: 4vh 0 0 6%; 
-    position: absolute;
-    z-index: 3;
+.logo__img {
+  width: 6%;
+  margin: 4vh 0 0 6%;
+  position: absolute;
+  z-index: 3;
+  &:hover {
+    filter: brightness(1.2);
+  }
 }

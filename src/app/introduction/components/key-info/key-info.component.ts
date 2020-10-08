@@ -14,7 +14,7 @@ export class KeyInfoComponent implements OnInit {
   }
 
   goTo(): void{
-    this.router.navigate(['/career']);
+    this.router.navigate(['/studios']);
   }
 
 }
