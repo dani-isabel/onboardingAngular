@@ -1,11 +1,10 @@
-@import '../../../styles/utilities.scss';
+@import "../../../styles/utilities.scss";
 
 .login {
-    margin: 19px 0 127px 0;
-    display: flex;
-    justify-content: center;
-}
-.input {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  .login__input {
     position: relative;
     padding: 0 0 0 32px;
     width: 38%;
@@ -20,16 +19,21 @@
     outline: none;
     color: $textColor;
     &:focus {
-        box-shadow: -5px 5px 10px $thirdColor;
+      box-shadow: -5px 5px 10px $thirdColor;
     }
-}
-.btnSave {
+  }
+  .login__btnSave {
     position: absolute;
     margin-left: 14%;
     z-index: 10;
     width: 12.5%;
     height: 60px;
-    background: linear-gradient(225deg, $secondColor 0%, $thirdColor 30%, $thirdColor 70%);
+    background: linear-gradient(
+      225deg,
+      $secondColor 0%,
+      $thirdColor 30%,
+      $thirdColor 70%
+    );
     border-radius: 30px;
     border: none;
     font-family: $secondFont;
@@ -38,7 +42,21 @@
     color: $secondColor;
     outline: none;
     &:hover {
-        background: linear-gradient(45deg, $secondColor 0%, $thirdColor 30%, $thirdColor 70%);
-        color: white;
+      background: linear-gradient(
+        45deg,
+        $secondColor 0%,
+        $thirdColor 30%,
+        $thirdColor 70%
+      );
+      color: white;
     }
+  }
+}
+.login__p {
+  font-family: $secondFont;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: $textColor;
+  text-align: center;
+  margin-top: 1vh;
 }

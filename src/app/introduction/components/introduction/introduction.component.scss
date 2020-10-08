@@ -1,20 +1,13 @@
 @import '../../../styles/utilities.scss';
 .infoUser {
-    // width: 100%;
-    // height: 100vh;
-    //height: 800px;
-    //background-image: url("../../../../assets/background.jpg");
-    //background-repeat: no-repeat;
-    //background-size: cover;
-    // background-size: 100% 100vh;
     width: 100%;
     height: 100vh;
-    background-image: url('../../../../assets/background.jpg');
+    background-image: url('../../../../assets/img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100vh;
-    h3 {
-        span {
+    .infoUser__h3 {
+        .infoUser__userName {
             font-size: $bigSize;
             text-align: center;
             font-family: $mainFont;
@@ -25,12 +18,12 @@
         color: white;
         font-size: 2em;
         font-weight: normal;
-        padding-top: 15vh;
+        padding-top: 14vh;
     }
-    h1 {
+    .infoUser__h1 {
         color: $thirdColor;
         text-align: center;
-        margin-top: 18vh;
+        margin-top: 20vh;
         font-size: 40px;
     }
 }

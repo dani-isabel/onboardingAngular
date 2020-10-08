@@ -7,7 +7,8 @@
 $my-accent: mat-palette($mat-pink, 400);*/
 $my-primary: mat-palette($md-purple, 500);
 $my-accent: mat-palette($md-pink, 500);
+$my-warn: mat-palette($mat-grey, 50);
 
-$my-theme: mat-light-theme($my-primary, $my-accent);
+$my-theme: mat-light-theme($my-primary, $my-accent, $my-warn);
 
 @include angular-material-theme($my-theme);
