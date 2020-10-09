@@ -29,6 +29,12 @@ export class LoginComponent implements OnInit {
     }
   }
 
+  onKey(event): void {
+    if (event.key === 'Backspace') {
+      this.correctName = false;
+    }
+  }
+
   ngOnInit(): void {
   }
 

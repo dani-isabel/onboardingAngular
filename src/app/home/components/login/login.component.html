@@ -1,5 +1,5 @@
 <form class="login">
-    <input #userInput class="login__input" type="text" placeholder={{placeholder}} value={{userInput.value}}>
+    <input #userInput class="login__input" type="text" placeholder={{placeholder}} value={{userInput.value}} (keyup)="onKey($event)">
     <button class="login__btnSave" type="submit" (click)="addUserName(userInput.value, $event)">{{send}}</button>
 </form>
 <p *ngIf=correctName class="login__p">El nombre solo debe contener letras y debe ser mínimo de 3 caracteres</p>
