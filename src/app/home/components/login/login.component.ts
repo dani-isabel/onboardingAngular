@@ -14,7 +14,8 @@ export class LoginComponent implements OnInit {
 
   constructor( private router: Router, private loginManagerService: LoginManagerService ) {}
 
-  addUserName(name: string): void {
+  addUserName(name: string, event): void {
+    event.preventDefault();
     const pattern = new RegExp('^[ñA-Za-z _]*[ñA-Za-z][ñA-Za-z _]*$', 'i');
     if (name.length < 3) {
       this.correctName = true;
@@ -25,6 +26,12 @@ export class LoginComponent implements OnInit {
       const nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
       this.loginManagerService.setName(nameCapitalized);
       this.router.navigate(['/intro', nameCapitalized]);
+    }
+  }
+
+  onKey(event): void {
+    if (event.key === 'Backspace') {
+      this.correctName = false;
     }
   }
 
