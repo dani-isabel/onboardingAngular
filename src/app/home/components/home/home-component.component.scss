@@ -1,19 +1,48 @@
-@import '../../../styles/utilities.scss';
+@import "../../../styles/utilities.scss";
 
 .welcome {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15vh;
+  .welcome__img {
+    max-width: 45%;
+  }
+  .welcome__h1 {
+    font-family: $mainFont;
+    font-size: $bigSize;
+    color: $firstColor;
+  }
+}
+@media (max-width: 768px) {
+    .welcome {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .welcome__h1 {
+        font-size: 1.9em;
+        margin-bottom: 3%;
+      }
+      .welcome__img {
+        max-height: 50vh;
+      }
+    }
+  }
+@media (max-width: 425px) {
+  .welcome {
+    height: 60vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 15vh;
-    .welcome__img {
-        max-width: 45%;
-    }
+    justify-content: center;
     .welcome__h1 {
-        font-family: $mainFont;
-        font-size: $bigSize;
-        color: $firstColor;
+      font-size: $small;
+      margin-bottom: 10%;
     }
+    .welcome__img {
+      max-height: 34vh;
+    }
+  }
 }
-
 

@@ -11,3 +11,17 @@
 .fci3__title {
     max-width: 16%;
 }
+@media(max-width: 768px) {
+    .title__section {
+        max-width: 15%;
+        font-size: 1.5em;
+        margin: 4vh 0 0 15%;
+    }
+}
+@media(max-width: 425px) {
+    .title__section {
+        max-width: 15%;
+        font-size: 1em;
+        margin: 7vh 0 0 18%;
+    }
+}
